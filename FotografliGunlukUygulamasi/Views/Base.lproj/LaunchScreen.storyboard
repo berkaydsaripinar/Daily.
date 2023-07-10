@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,21 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue and Yellow Modern Education App Mobile Prototype" translatesAutoresizingMaskIntoConstraints="NO" id="Ac0-SC-Bfp">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VxE-X6-AD9">
+                                <rect key="frame" x="49" y="235.66666666666663" width="294" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153.66666666666666" id="pdz-hQ-nWc"/>
+                                </constraints>
+                                <imageReference key="image" image="scribble.variable" catalog="system" symbolScale="medium"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIh-tl-m6b">
+                                <rect key="frame" x="70" y="463" width="252" height="146"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="103"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="12W-1J-QAO">
+                                <rect key="frame" x="150" y="671" width="92" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ac0-SC-Bfp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4m7-Rg-mlf"/>
-                            <constraint firstItem="Ac0-SC-Bfp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="5He-Ua-NoH"/>
-                            <constraint firstAttribute="bottom" secondItem="Ac0-SC-Bfp" secondAttribute="bottom" id="9uc-7Q-meM"/>
-                            <constraint firstItem="Ac0-SC-Bfp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Urc-FM-a2F"/>
-                            <constraint firstItem="Ac0-SC-Bfp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZXS-Jj-LHu"/>
-                            <constraint firstAttribute="bottom" secondItem="Ac0-SC-Bfp" secondAttribute="bottom" id="aha-um-DNl"/>
-                            <constraint firstItem="Ac0-SC-Bfp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bci-Zx-Mbe"/>
-                            <constraint firstItem="Ac0-SC-Bfp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oBN-UD-Dt1"/>
+                            <constraint firstItem="VxE-X6-AD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="4Xk-5h-J3g"/>
+                            <constraint firstItem="VxE-X6-AD9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176.99999999999997" id="6xB-H8-p6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="12W-1J-QAO" secondAttribute="bottom" constant="127" id="7Qo-Cv-9ht"/>
+                            <constraint firstItem="12W-1J-QAO" firstAttribute="top" secondItem="QIh-tl-m6b" secondAttribute="bottom" constant="62" id="7V8-AM-R22"/>
+                            <constraint firstItem="QIh-tl-m6b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="KKo-BB-dlA"/>
+                            <constraint firstItem="12W-1J-QAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="brv-hB-C4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="12W-1J-QAO" secondAttribute="trailing" constant="151" id="clT-CR-t3s"/>
+                            <constraint firstItem="VxE-X6-AD9" firstAttribute="centerX" secondItem="QIh-tl-m6b" secondAttribute="centerX" id="kNb-lm-N0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIh-tl-m6b" secondAttribute="trailing" constant="71" id="v2m-4X-fEi"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,7 +55,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Blue and Yellow Modern Education App Mobile Prototype" width="414" height="896"/>
+        <image name="scribble.variable" catalog="system" width="128" height="119"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

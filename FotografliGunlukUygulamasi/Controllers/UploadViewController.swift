@@ -19,7 +19,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.layer.cornerRadius = 80.0
+        imageView.layer.cornerRadius = 75.0
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target:self, action: #selector(gorselSec))
         imageView.addGestureRecognizer(gestureRecognizer)

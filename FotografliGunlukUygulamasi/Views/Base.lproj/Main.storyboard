@@ -293,11 +293,12 @@
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="l2w-iR-LMP"/>
                                                     </constraints>
                                                     <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Görsel Yükle" translatesAutoresizingMaskIntoConstraints="NO" id="oRC-Bc-r4E">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Görsel Yükle" translatesAutoresizingMaskIntoConstraints="NO" id="oRC-Bc-r4E">
                                                     <rect key="frame" x="46.666666666666657" y="62" width="300" height="170"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="170" id="8pO-oM-A7f"/>
@@ -315,7 +316,7 @@
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="hpX-E2-C9Q"/>
                                                         <constraint firstAttribute="width" constant="309" id="oyt-1S-CXs"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
